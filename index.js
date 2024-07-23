@@ -1,6 +1,10 @@
 const express = require("express")
+const cors = require("cors")
 const app = express()
 const axios = require("axios")
+
+app.use(cors())
+app.use(express.json())
 
 app.get("/api/v1/exchange/:base/:target/:base_value", async (req, res) => {
     try {
