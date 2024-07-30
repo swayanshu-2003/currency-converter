@@ -11,5 +11,11 @@
             "src": "/(.*)",
             "dest": "index.js"
         }
+    ],
+    "rewrites": [
+        {
+            "source": "/api/v1/exchange/:base/:target/:base_value",
+            "destination": "/api/index.js"
+        }
     ]
 }
